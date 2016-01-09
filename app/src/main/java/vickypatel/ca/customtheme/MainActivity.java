@@ -15,7 +15,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(R.style.TrainerPlusTheme);
+
+
+        Bundle bundle =  getIntent().getExtras();
+        if(bundle!= null){
+            String ID = bundle.getString("ID");
+            System.out.println(ID);
+            switch (ID){
+                case "T":
+                    setTheme(R.style.TrainerPlusTheme);
+                    break;
+                case "L":
+                    setTheme(R.style.LogItTheme);
+                    break;
+                case "S":
+                    setTheme(R.style.SmoothPayTheme);
+                    break;
+
+            }
+        }
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -44,9 +62,24 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        //finish activity and stat it again
+        finish();
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+
         //noinspection SimplifiableIfStatement
-        if (id == R.id.trainer_plus) {
-            return true;
+        switch (id) {
+            case R.id.trainer_plus:
+                intent.putExtra("ID", "T");
+                startActivity(intent);
+                return true;
+            case R.id.logIt:
+                intent.putExtra("ID", "L");
+                startActivity(intent);
+                return true;
+            case R.id.smooth_pay:
+                intent.putExtra("ID", "S");
+                startActivity(intent);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);

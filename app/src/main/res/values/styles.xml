@@ -20,15 +20,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDarkTrainerPlus</item>
         <item name="colorAccent">@color/colorAccentTrainerPlus</item>
     </style>
-    <style name="LogitTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimaryTrainerPlus</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkTrainerPlus</item>
-        <item name="colorAccent">@color/colorAccentTrainerPlus</item>
+    <style name="LogItTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryLogIt</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkLogIt</item>
+        <item name="colorAccent">@color/colorAccentLogIt</item>
     </style>
-    <style name="SmotthPayTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimaryTrainerPlus</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkTrainerPlus</item>
-        <item name="colorAccent">@color/colorAccentTrainerPlus</item>
+    <style name="SmoothPayTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimarySmoothPay</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkSmoothPay</item>
+        <item name="colorAccent">@color/colorAccentSmoothPay</item>
     </style>
 
 
