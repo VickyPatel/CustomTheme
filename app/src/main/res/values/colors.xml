@@ -4,8 +4,13 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-
     <color name="colorPrimaryTrainerPlus">#84BD3C</color>
     <color name="colorPrimaryDarkTrainerPlus">#517425</color>
     <color name="colorAccentTrainerPlus">#ff6600</color>
+
+
+    <color name="colorPrimaryLogIt">#84BD3C</color>
+    <color name="colorPrimaryDarkLogIt">#517425</color>
+    <color name="colorAccentLogIt">#ff6600</color>
+
 </resources>
