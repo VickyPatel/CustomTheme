@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         Bundle bundle =  getIntent().getExtras();
         if(bundle!= null){
             String ID = bundle.getString("ID");
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                     setTheme(R.style.TrainerPlusTheme);
                     break;
                 case "L":
-                    setTheme(R.style.LogItTheme);
+                    setTheme(R.style.Theme_Material_Light);
                     break;
                 case "S":
                     setTheme(R.style.SmoothPayTheme);
